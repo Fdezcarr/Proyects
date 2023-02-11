@@ -1,0 +1,2 @@
+cd proyecto-final
+sass --watch sass/index.scss css/styles.css
