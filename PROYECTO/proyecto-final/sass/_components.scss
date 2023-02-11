@@ -1,4 +1,5 @@
-//mixins
+//mixins LAS CREAMOS PARA PONER ESTILOS A DOS O MAS COSAS 
+//IGUALES 
 @mixin btn-base{
     padding: 0.25rem 1.5rem;
     border-radius: 0.25rem;
@@ -14,7 +15,7 @@
 $color-main:#0075ff;
 
 
-
+//EL HOOVER VA ANIDADO AL PADRE Y SE INCLUYE DENTRO DE EL;
 .btn-main{
     @include btn-base();
     color: rgb(248, 247, 247);
@@ -60,25 +61,78 @@ $color-main:#0075ff;
 }
 
 .icon-sm{
-    border: 1px solid black;
-    padding: 0.25rem;
-    border-radius: 0.25rem; 
-    background-color: white;
-
-    color: rgb(248, 247, 247);
-    background-color: $color-main;
-    border: solid 1px $color-main;
-    
-    &:hover{
-        background-color: white;
-        color: $color-main;
-
-        i{
+    i{
+            
+            box-shadow: 0 0 10px #00000040;
+            border-radius: 50%;
             color: $color-main;
-            // background-color: white;
+            padding: 0.1rem 0.25rem;
+            
         }
-    }
+    
     
     
 }
 
+
+.feature{
+    //CON ESTO PONEMOS EL TEXTO DEBAJO DEL ICONO  icono dentro del <div>
+    flex-direction: column;
+    display: flex;
+
+    .icon{
+    
+        color:$color-main;
+        font-size: 10rem;
+        text-align: center;
+
+
+    }
+
+// CON ESTE PROCESO ANIDAMOS VARIAS VARIABLES DENTRO DE OTRAS  DE MAYOR A MENOR
+.description{
+
+    .tittle{
+        font-size: 2rem;
+        text-align: center;
+        
+
+
+    }
+
+    .text{
+        text-align: center;
+        color: #888;
+        font-weight: 600;
+
+    }
+}
+    .cta{
+        color: $color-main;
+        font-weight: 600;
+        margin-top: 3rem;
+        text-align: center;
+
+    }
+}
+//CON ESTA ESTRUCTURA CREAMOS UN ICONO CON UNA DESCRIPCION DEBAJO 
+// ES MUY PRACTICA PARA CREATE ACCOUNT, Y ICONOS ILUSTRATIVOS
+.icon-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .icon{
+        color: $color-main;
+        font-size: 10rem;
+        padding: 0;
+        
+
+    }
+    .tittle{
+        margin-top: -2rem;
+        font-size: 1.5rem;
+
+
+    }
+
+}
