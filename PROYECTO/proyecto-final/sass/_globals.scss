@@ -1,11 +1,16 @@
+// IMPORTAMOS VARIABLES DE OTRAS RUTAS
+@use "components";
+
 //EN GLOBALS CREAMOS LOS ESTILOS QUE VAN A PERMANECER 
 //SIEMPRE EN LA PAGINA WEB LA ESTRUCTURA DEL BODY
 //EL MENU ETC
+
 
 body{
 
 
 }
+//CLASES PARA CREAR MENU PRINCIPAL
 .nav{
     display: flex;
     align-items:center;
@@ -14,4 +19,34 @@ body{
     height: 4rem;
     border-bottom: solid 1px #ddd;
     
+    
+}
+.logo img{
+    max-width: 8rem;
+}
+
+
+.sec-home {
+    display: flex;
+    width: 100%;
+    padding: 5rem;
+    .home-cta {
+        
+        flex: 1;
+        .cta-text {
+            // DE ESTA FORMA ACCEDEMOS A LA VARIABLE DE 
+            // COLOR DE OTRA HOJA CON @USE
+            color: components.$color-main;
+        }
+        .home-title{
+            width: 20rem;
+            font-size: 3rem;
+
+        }
+    }
+
+}
+
+.img-home{
+    max-width: 15rem;
 }

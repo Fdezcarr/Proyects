@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final</title>
     <!-- AQUI IMPORTAMOS LA LIBRERIA DE BOOSTRAP ICONOS Y ESTILOS; -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- EL CSS AÑADIMOS ../ PARA SALIR A UNA CARPETA MAS 
     EXTERNA , SI NO VA EL CODIGO -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
     <!-- ESTA ESTRUCTURA ES PARA CUANDO HAY PARRAFO 
     SEGUIMOS LOS PATRONES DE ANIDACION -->
@@ -26,41 +29,70 @@
     <div>
         <p class="cta">Este es el cta</p>
     </div> -->
-<!-- CON ESTA ESTRUCTURA CREAMOS EL DIV DE LA CAJA,
+    <!-- CON ESTA ESTRUCTURA CREAMOS EL DIV DE LA CAJA,
 LA IMAGEN Y EL PARRAFO CON SU H3 SI LO TUVIERA -->
-     <!-- </div>
+    <!-- </div>
      <div class="icon-desc">
         <i class="bi bi-eye-fill icon"></i>
         <h3 class="title">Create an account</h3>
 
      </div>
     </div> -->
-<!-- 
+    <!-- 
 MENU DE NAVEGACION ESTRUCTURA  y HOME-->
-<!-- 1-MENU 3 PARTES -->
-<nav class="nav">
-    <div class="logo">a</div>
-    <div class="main-menu">
-        <ul>
-            <li> <a href="">Prices</a></li>
-            <li><a href="">Learn</a></li>
-            <li><a href="">Individuals</a></li>
-            <li><a href="">Businesses</a></li>
-            <li><a href="">Developers</a></li>
-            <li><a href="">Company</a></li>
+    <!-- 1-MENU 3 PARTES -->
+    <nav class="nav">
+        <!-- //EN EL LOGO AÑADIMOS LA CLASE GENERAL 
+    //YA QUE SOLO HAY UNO Y ABAJO SU ESTRUCTURA -->
+        <div class="logo">
+            <img src="pngegg.png" alt="logo">
+            <a href="#"></a>
+        </div>
+        <div class="main-menu">
+            <ul>
+                <li> <a href="">Prices</a></li>
+                <li><a href="">Learn</a></li>
+                <li><a href="">Individuals</a></li>
+                <li><a href="">Businesses</a></li>
+                <li><a href="">Developers</a></li>
+                <li><a href="">Company</a></li>
 
 
-        </ul>
-    </div>
-    <div class="get-started">a</div>
-</nav>
-<section class="sec-home"></section>
-<section class="sec-call-to-action"></section>
-<section class="sec-features"></section>
-<section class="sec-benefits"></section>
-<section class="sec-kpis"></section>
-<section class="sec-onboarding"></section>
-<section class="sec-footer-cta"></section>
+            </ul>
+        </div>
+        <!-- AQUI AÑADIMOS LOS BOTONES DE LOGIN -->
+        <!-- UTILIZAMOS LAS CLASES DESCRITAS AL PRINCIPIO
+    BTN-MAIN; BTN-SEC -->
+        <div class="get-started">
+            <button class="btn-sec-s">Sign in</button>
+            <button class="btn-main-s">Get started</button>
+        </div>
+    </nav>
+    <!-- CREANDO LA SECCION HOME CON SUS DOS SECCIONES INTERNAS -->
+    <section class="sec-home">
+        <div class="home-cta">
+            <div class="cta-text">
+                <span>Jump start your portfolio</span>
+                <i class="bi bi-arrow-right"></i>
+            </div>
+        </div>
+        <!-- AQUI CREAMOS LAS LETRAS PRINCIPALES DEL HOME -->
+        <div>
+            <h2 class="home-title display-2 ">Jum start your crypto portfolio</h2>
+            <p class="home-description">Coinbase is the easiest place to buy and sell cryptocurrency. Sing up and get
+                started today.</p>
+        </div>
+        <div class="home-img">
+            <img class="img-home" src="pngegg (1).png" alt="">
+        </div>
+
+    </section>
+    <section class="sec-call-to-action"></section>
+    <section class="sec-features"></section>
+    <section class="sec-benefits"></section>
+    <section class="sec-kpis"></section>
+    <section class="sec-onboarding"></section>
+    <section class="sec-footer-cta"></section>
 
 
 
@@ -71,6 +103,9 @@ MENU DE NAVEGACION ESTRUCTURA  y HOME-->
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -52,14 +52,14 @@ $color-main:#0075ff;
     
 }
 // ESTILOS PARA EL MENU CREADOS PREVIAMENTE
+//CENTRADO AL CENTRO
 .main-menu{
-    
-    
+    margin-bottom: 0;
     li{
         font-size: 0.75rem;
         list-style: none;
         display: inline;
-        //CAMBIAMOS EL COLOR DE LOS ENLACES
+        //CAMBIAMOS EL COLOR DE LOS ENLACES PARA QUE AL PASAR SE SUBRAYE
         //DENTRO DE SU PADRE EL LI
         a{
             color: #000;
