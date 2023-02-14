@@ -56,7 +56,8 @@ $color-main:#0075ff;
 .main-menu{
     margin-bottom: 0;
     li{
-        font-size: 0.75rem;
+        padding: 0.3rem;
+        font-size: 1.2rem;
         list-style: none;
         display: inline;
         //CAMBIAMOS EL COLOR DE LOS ENLACES PARA QUE AL PASAR SE SUBRAYE
@@ -81,19 +82,15 @@ $color-main:#0075ff;
 }
 
 .icon-sm{
-    i{
-            
+    i {
+            color: $color-main;
             box-shadow: 0 0 10px #00000040;
             border-radius: 50%;
-            color: $color-main;
-            padding: 0.1rem 0.25rem;
+            font-size: 1.25rem;
+            padding: 0.4rem 0.65rem;
             
         }
-    
-    
-    
 }
-
 
 .feature{
     //CON ESTO PONEMOS EL TEXTO DEBAJO DEL ICONO  icono dentro del <div>
@@ -102,7 +99,7 @@ $color-main:#0075ff;
 
     .icon{
     
-        color:$color-main;
+        color: $color-main;
         font-size: 10rem;
         text-align: center;
 

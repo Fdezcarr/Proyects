@@ -1,5 +1,11 @@
 // IMPORTAMOS VARIABLES DE OTRAS RUTAS
 @use "components";
+@mixin section-display{
+    width: 100%;
+    max-width: 992px;
+    margin: auto;
+    padding: 3rem;
+}
 
 //EN GLOBALS CREAMOS LOS ESTILOS QUE VAN A PERMANECER 
 //SIEMPRE EN LA PAGINA WEB LA ESTRUCTURA DEL BODY
@@ -22,17 +28,19 @@ body{
     
 }
 .logo img{
-    max-width: 8rem;
+    max-width: 7rem;
 }
 
 
 .sec-home {
-    display: run-in;
-    width: 100%;
-    padding: 5rem;
+    display: flex;
+    @include section-display();
+    align-items: center;
+
     .home-cta {
+        flex: 1; 
         
-        flex: 1;
+        
         .cta-text {
             // DE ESTA FORMA ACCEDEMOS A LA VARIABLE DE 
             // COLOR DE OTRA HOJA CON @USE
@@ -44,9 +52,54 @@ body{
 
         }
     }
+    
 
 }
+// SECCION SIGUIENTE AL HOME CON UN MIXON IMPORTAMOS LOS ESTILOS COMUNES 
+.sec-features{
+    @include section-display();
+    .intro{
+        text-align: center;
+        h3{
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 0.8rem;
+            color: #888;
+        }
+    }
+    .features {
+        align-items: center;
+        display: flex;
+        gap: 1rem;
+        .text {
+            padding: 2rem 0;
+            max-width: 40%;
+            .feature{
+                display: flex;
+                flex-direction: row;
+                //CON ESTA PROPIEDAD PONEMOS EL ICONO A LA ALTURA DEL TITULO baseline
+                align-items: center;
+                .description {
+                    margin-left: 1rem;
+                    //CON ESTAS PROPIEDADES LO ALEJAMOS DEL ICONO Y CAMBIAMOS EL TAMAÑO DE LETRA
+                    .description-title {    
+                    font-size: 1.15rem;
 
-.img-home{
-    max-width: 15rem;
+                    }
+                    .description-text {
+                        font-size: 1rem;
+
+
+                    }
+                }
+            }
+        }
+        .img {
+            img{
+                max-width: 18rem;
+            }
+        }
+    }
 }
+
