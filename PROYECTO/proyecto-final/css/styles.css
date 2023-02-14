@@ -131,6 +131,8 @@
   max-width: 992px;
   margin: auto;
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 .sec-features .intro {
   text-align: center;
@@ -149,7 +151,7 @@
 }
 .sec-features .features .text {
   padding: 2rem 0;
-  max-width: 40%;
+  flex: 1;
 }
 .sec-features .features .text .feature {
   display: flex;
@@ -158,6 +160,7 @@
 }
 .sec-features .features .text .feature .description {
   margin-left: 1rem;
+  max-width: 20rem;
 }
 .sec-features .features .text .feature .description .description-title {
   font-size: 1.15rem;
