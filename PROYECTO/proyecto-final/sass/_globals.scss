@@ -55,13 +55,13 @@ body{
     
 
 }
-// SECCION SIGUIENTE AL HOME CON UN MIXON IMPORTAMOS LOS ESTILOS COMUNES 
+// SECCION SIGUIENTE AL HOME CON UN MIXiN IMPORTAMOS LOS ESTILOS COMUNES 
 .sec-features{
     @include section-display();
     display: flex;
     flex-direction: column;
-    
-    .intro{
+    align-items: center;
+      .intro{
         text-align: center;
         h3{
             font-size: 1.8rem;
@@ -72,9 +72,9 @@ body{
         }
     }
     .features {
-        align-items: center;
         display: flex;
         gap: 1rem;
+        align-items: center;
         .text {
             padding: 2rem 0;
             flex: 1;
@@ -105,6 +105,12 @@ body{
                 max-width: 18rem;
             }
         }
+    }
+}
+// EXTENDEMOS LA SECCION DE FEATURES YA QUE ES MUY PARECIDA 
+.sec-benefits {
+.intro {
+    @extend .sec-features, .intro;
     }
 }
 
