@@ -54,25 +54,25 @@
   padding: 0.4rem 0.65rem;
 }
 
-.feature {
+.benefit {
   flex-direction: column;
   display: flex;
 }
-.feature .icon {
+.benefit .icon {
   color: #0075ff;
-  font-size: 10rem;
+  font-size: 7.5rem;
   text-align: center;
 }
-.feature .description .tittle {
+.benefit .description .title {
   font-size: 2rem;
   text-align: center;
 }
-.feature .description .text {
+.benefit .description .text {
   text-align: center;
   color: #888;
   font-weight: 600;
 }
-.feature .cta {
+.benefit .cta {
   color: #0075ff;
   font-weight: 600;
   margin-top: 3rem;
@@ -171,6 +171,10 @@
 }
 .sec-features .features .img img, .sec-benefits .intro .features .img img {
   max-width: 18rem;
+}
+
+.sec-benefits .intro {
+  border-top: 1px solid #ddd;
 }
 
 /*# sourceMappingURL=styles.css.map */
