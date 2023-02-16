@@ -42,6 +42,9 @@
   color: #000;
   text-decoration: none;
 }
+.main-menu li a.active {
+  color: #0075ff;
+}
 .main-menu li a:hover {
   text-decoration: underline;
 }
@@ -110,6 +113,15 @@
 }
 .sec-footer-cta .cta-description {
   font-size: 1.1rem;
+}
+
+#carouselExampleAutoplaying .carousel-control-prev-icon {
+  color: #0075ff;
+  background-image: none;
+  font-size: 5rem;
+}
+#carouselExampleAutoplaying .carousel-control-prev-icon:hover {
+  color: rgb(249, 243, 243);
 }
 
 .nav {

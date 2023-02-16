@@ -45,18 +45,19 @@ MENU DE NAVEGACION ESTRUCTURA  y HOME-->
         <!-- //EN EL LOGO AÑADIMOS LA CLASE GENERAL 
     //YA QUE SOLO HAY UNO Y ABAJO SU ESTRUCTURA -->
         <div class="logo">
-            <img src="/proyecto-final/assets/pngegg.png" alt="logo">
-            <a href="#"></a>
+            <a href="index.html">
+                <img src="/proyecto-final/assets/pngegg.png" alt="logo">
+            </a>
         </div>
         <!-- HACER RESPONSIVE EL MENU CUANDO HACEMOS PEQUEÑO DESAPARECE d-none d-md-block -->
         <div class="menu d-none d-md-block">
             <ul class="main-menu">
-                <li> <a href="">Prices</a></li>
+                <li> <a class="active" href="index.html">Inicio</a></li>
                 <li><a href="">Learn</a></li>
                 <li><a href="">Individuals</a></li>
                 <li><a href="">Businesses</a></li>
                 <li><a href="">Developers</a></li>
-                <li><a href="">Company</a></li>
+                <li><a href="company.html">Company</a></li>
 
 
             </ul>
@@ -69,6 +70,28 @@ MENU DE NAVEGACION ESTRUCTURA  y HOME-->
             <button class="btn-main-s">Get started</button>
         </div>
     </nav>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://random.imagecdn.app/500/150" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://random.imagecdn.app/500/150" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://random.imagecdn.app/500/150" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <i class="carousel-control-prev-icon bi bi bi-caret-left-fill"></i>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <i class="carousel-control-prev-icon bi bi-caret-right-fill"></i>
+        </button>
+    </div>
+
     <!-- CREANDO LA SECCION HOME CON SUS DOS SECCIONES INTERNAS -->
     <section class="sec-home">
         <div class="home-cta">
@@ -78,14 +101,12 @@ MENU DE NAVEGACION ESTRUCTURA  y HOME-->
                 <i class="bi bi-arrow-right"></i>
             </div>
             <h2 class="home-title display-2 ">Jum start your crypto portfolio</h2>
-            <p class="home-description">Coinbase is the easiest place to buy and sell cryptocurrency. Sing up and get</p>
-            
+            <p class="home-description">Coinbase is the easiest place to buy and sell cryptocurrency. Sing up and get
+            </p>
+
             <div class="lead-magnet row align-items-center">
                 <!-- CON ESTE DIV Y SU CLASE BOOSTRAP ALINEAMOS EL INPUT Y EL BOTON  -->
-                <div class="col"> <input 
-                    type="text" 
-                    class="form-control" 
-                    placeholder="Email address">
+                <div class="col"> <input type="text" class="form-control" placeholder="Email address">
                 </div>
                 <div class="col">
                     <button class="btn-main">Get startet</button>
@@ -110,8 +131,9 @@ MENU DE NAVEGACION ESTRUCTURA  y HOME-->
                         <i class="bi bi-graph-up"></i>
                     </span>
                     <div class="description">
-                       <h4 class="description-title">Manage your portfolio</h4>
-                       <p class=" description-text">Buy and sell popular digital currencies,keep track of them in the one place</p>
+                        <h4 class="description-title">Manage your portfolio</h4>
+                        <p class=" description-text">Buy and sell popular digital currencies,keep track of them in the
+                            one place</p>
                     </div>
                 </div>
                 <div class="feature">
@@ -119,9 +141,10 @@ MENU DE NAVEGACION ESTRUCTURA  y HOME-->
                         <i class="bi bi-calendar"></i>
                     </span>
                     <div class="description">
-                       <h4 class="description-title">Recurring buys
-                         </h4>
-                       <p class=" description-text">Invest in cryptocurrency slowly over time by scheduling buys daily,weekly,or monthly</p>
+                        <h4 class="description-title">Recurring buys
+                        </h4>
+                        <p class=" description-text">Invest in cryptocurrency slowly over time by scheduling buys
+                            daily,weekly,or monthly</p>
                     </div>
                 </div>
                 <div class="feature">
@@ -129,13 +152,13 @@ MENU DE NAVEGACION ESTRUCTURA  y HOME-->
                         <i class="bi bi-phone"></i>
                     </span>
                     <div class="description">
-                       <h4 class="description-title">Mobile apps</h4>
-                       <p class=" description-text">Stay on top of the markets with the Coinbase app Androir or iOS</p>
+                        <h4 class="description-title">Mobile apps</h4>
+                        <p class=" description-text">Stay on top of the markets with the Coinbase app Androir or iOS</p>
                     </div>
                 </div>
             </div>
             <div class="img">
-                <img src="../assets/chart.png" alt="chart"/>
+                <img src="../assets/chart.png" alt="chart" />
             </div>
         </div>
     </section>
@@ -143,12 +166,12 @@ MENU DE NAVEGACION ESTRUCTURA  y HOME-->
         <div class="intro">
             <h3> The most trusted cryptocurrency platform</h3>
             <p>Here are a few reasons why you should choose Coinbase</p>
-        <!-- CON ESTA ESTRUCTURA CREAMOS LA ESTRUCTURA 3ª PARTE DEL HOME  -->
+            <!-- CON ESTA ESTRUCTURA CREAMOS LA ESTRUCTURA 3ª PARTE DEL HOME  -->
         </div>
         <div class="benefit-cards row">
             <!-- CON LA CLASE col-md hacemos responsive los iconos ejemplo debajo  -->
             <div class="benefit col-md">
-                 <i class="bi bi-eye-fill"></i>
+                <i class="bi bi-eye-fill"></i>
                 <div class="description">
                     <h4 class="title">Secure storage</h4>
                     <p class="text">We store the was majority of the digital assets in securre offline storage</p>
@@ -157,22 +180,22 @@ MENU DE NAVEGACION ESTRUCTURA  y HOME-->
             </div>
             <div class="benefit col-md">
                 <i class="bi bi-envelope"></i>
-               <div class="description">
-                   <h4 class="title">Secure storage</h4>
-                   <p class="text">We store the was majority of the digital assets in securre offline storage</p>
-               </div>
-               <p class="cta">Learn how Coinbase keeps your funds safe red secure</p>
-           </div>
-           <div class="benefit col-md">
-            <i class="bi bi-shield-shaded"></i>
-           <div class="description">
-               <h4 class="title">Secure storage</h4>
-               <p class="text">We store the was majority of the digital assets in securre offline storage</p>
-           </div>
-           <p class="cta">Learn how Coinbase keeps your funds safe red secure</p>
-       </div>
+                <div class="description">
+                    <h4 class="title">Secure storage</h4>
+                    <p class="text">We store the was majority of the digital assets in securre offline storage</p>
+                </div>
+                <p class="cta">Learn how Coinbase keeps your funds safe red secure</p>
+            </div>
+            <div class="benefit col-md">
+                <i class="bi bi-shield-shaded"></i>
+                <div class="description">
+                    <h4 class="title">Secure storage</h4>
+                    <p class="text">We store the was majority of the digital assets in securre offline storage</p>
+                </div>
+                <p class="cta">Learn how Coinbase keeps your funds safe red secure</p>
+            </div>
         </div>
-        
+
     </section>
     <section class="sec-kpis row">
         <div class="kpi col-md">
@@ -194,35 +217,36 @@ MENU DE NAVEGACION ESTRUCTURA  y HOME-->
             <p>Coinbase supports a variety of the most popular</p>
         </div>
         <div class="steps">
-           <div class="icon-desc">
-            
-            <i class="bi bi-person-plus-fill"></i>
-            <h4 class="tittle">
-                Create an account
-            </h4>
-           </div>
-           <div class="step-separator"></div>
-           <div class="icon-desc">
-            <i class="bi bi-bank"></i>
-            <h4 class="tittle">
-                Link your bank account
-            </h4>
-           </div>
-           <div class="step-separator"></div>
-           <div class="icon-desc">
-            <i class="bi bi-coin"></i>
-            <h4 class="tittle">
-                Purchase some coin
-            </h4>
-           </div>
-           
+            <div class="icon-desc">
+
+                <i class="bi bi-person-plus-fill"></i>
+                <h4 class="tittle">
+                    Create an account
+                </h4>
+            </div>
+            <div class="step-separator"></div>
+            <div class="icon-desc">
+                <i class="bi bi-bank"></i>
+                <h4 class="tittle">
+                    Link your bank account
+                </h4>
+            </div>
+            <div class="step-separator"></div>
+            <div class="icon-desc">
+                <i class="bi bi-coin"></i>
+                <h4 class="tittle">
+                    Purchase some coin
+                </h4>
+            </div>
+
         </div>
-        
+
     </section>
     <section class="sec-footer-cta">
         <div class="footer-cta">
             <h4 class="cta-tittle">Earn up to 7$ worth of crypto</h4>
-            <p class="cta-description"> Discover how specific cryptocurrencies work-- and get a bit of each crypto to try out for yourself</p>
+            <p class="cta-description"> Discover how specific cryptocurrencies work-- and get a bit of each crypto to
+                try out for yourself</p>
             <button class="btn-main"> Start earning</button>
         </div>
     </section>

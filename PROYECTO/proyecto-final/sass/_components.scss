@@ -64,6 +64,9 @@ $color-footer:#f4f8fe;
         //CAMBIAMOS EL COLOR DE LOS ENLACES PARA QUE AL PASAR SE SUBRAYE
         //DENTRO DE SU PADRE EL LI
         a{
+            &.active{
+                color: $color-main;
+            }
             color: #000;
             text-decoration: none;
 
@@ -172,4 +175,23 @@ $color-footer:#f4f8fe;
         font-size: 1.1rem;
         
     }
+}
+
+.carousel-control-next, .carousel-control-prev {
+
+
+   
+}
+// AÑADIMOS dos selectores para que solo se aplique donde cumpla las condiciones
+#carouselExampleAutoplaying .carousel-control-prev-icon {
+    color: $color-main;
+    background-image: none;
+    font-size: 5rem;
+
+    &:hover{
+        
+        color: rgb(249, 243, 243);
+
+    }
+  
 }

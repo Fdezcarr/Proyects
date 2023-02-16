@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <!-- AQUI IMPORTAMOS LA LIBRERIA DE BOOSTRAP ICONOS Y ESTILOS; -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- EL CSS AÑADIMOS ../ PARA SALIR A UNA CARPETA MAS 
+    EXTERNA , SI NO VA EL CODIGO -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- ESTA ESTRUCTURA ES PARA CUANDO HAY PARRAFO 
+    SEGUIMOS LOS PATRONES DE ANIDACION -->
+    <!-- CON ESTO CREAMOS UNA IMAGEN CON TEXTO DEBAJO  -->
+    <!-- <div class="container">
+    <div class="feature">
+    <i class="bi bi-eye-fill icon"></i>
+    <div class="description">
+        <h3 class="tittle">Secure storage</h3>
+        <p class="text"> we store........</p>
+    </div>
+    <div>
+        <p class="cta">Este es el cta</p>
+    </div> -->
+    <!-- CON ESTA ESTRUCTURA CREAMOS EL DIV DE LA CAJA,
+LA IMAGEN Y EL PARRAFO CON SU H3 SI LO TUVIERA -->
+    <!-- </div>
+     <div class="icon-desc">
+        <i class="bi bi-eye-fill icon"></i>
+        <h3 class="title">Create an account</h3>
+
+     </div>
+    </div> -->
+    <!-- 
+MENU DE NAVEGACION ESTRUCTURA  y HOME-->
+    <!-- 1-MENU 3 PARTES -->
+    <nav class="nav">
+        <!-- //EN EL LOGO AÑADIMOS LA CLASE GENERAL 
+    //YA QUE SOLO HAY UNO Y ABAJO SU ESTRUCTURA -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="/proyecto-final/assets/pngegg.png" alt="logo">
+            </a>
+            
+        </div>
+        <!-- HACER RESPONSIVE EL MENU CUANDO HACEMOS PEQUEÑO DESAPARECE d-none d-md-block -->
+        <div class="menu d-none d-md-block">
+            <ul class="main-menu">
+                <li> <a  href="index.html">Inicio</a></li>
+                <li><a href="">Learn</a></li>
+                <li><a href="">Individuals</a></li>
+                <li><a href="">Businesses</a></li>
+                <li><a href="">Developers</a></li>
+                <li><a class="active" href="company.html">Company</a></li>
+
+
+            </ul>
+        </div>
+        <!-- AQUI AÑADIMOS LOS BOTONES DE LOGIN -->
+        <!-- UTILIZAMOS LAS CLASES DESCRITAS AL PRINCIPIO
+    BTN-MAIN; BTN-SEC -->
+        <div class="get-started">
+            <button class="btn-sec-s">Sign in</button>
+            <button class="btn-main-s">Get started</button>
+        </div>
+    </nav>
+    <section class="sec-home">
+        <div class="home-cta">
+            <!-- AQUI AÑADIMOS ICONO BOOSTRAP MAS EL HOME  TITLE  -->
+            <div class="cta-text">
+                <span class="">Jump start your portfolio</span>
+                <i class="bi bi-arrow-right"></i>
+            </div>
+            <h2 class="home-title display-2 ">Jum start your crypto portfolio</h2>
+            <p class="home-description">Coinbase is the easiest place to buy and sell cryptocurrency. Sing up and get
+            </p>
+
+            <div class="lead-magnet row align-items-center">
+                <!-- CON ESTE DIV Y SU CLASE BOOSTRAP ALINEAMOS EL INPUT Y EL BOTON  -->
+                <div class="col"> <input type="text" class="form-control" placeholder="Email address">
+                </div>
+                <div class="col">
+                    <button class="btn-main">Get startet</button>
+                </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <img class="img-home" src="../assets/wallet.png" alt="wallet" />
+        </div>
+    </section>
+    
+    <section class="sec-footer-cta">
+        <div class="footer-cta">
+            <h4 class="cta-tittle">Earn up to 7$ worth of crypto</h4>
+            <p class="cta-description"> Discover how specific cryptocurrencies work-- and get a bit of each crypto to
+                try out for yourself</p>
+            <button class="btn-main"> Start earning</button>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
