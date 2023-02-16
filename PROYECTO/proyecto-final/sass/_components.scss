@@ -13,6 +13,7 @@
 //variables
 
 $color-main:#0075ff;
+$color-footer:#f4f8fe;
 
 
 //EL HOOVER VA ANIDADO AL PADRE Y SE INCLUYE DENTRO DE EL;
@@ -97,10 +98,10 @@ $color-main:#0075ff;
     flex-direction: column;
     display: flex;
 
-    .icon{
+    i{
     
         color: $color-main;
-        font-size: 7.5rem;
+        font-size: 7rem;
         text-align: center;
 
 
@@ -138,7 +139,7 @@ $color-main:#0075ff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .icon{
+    i {
         color: $color-main;
         font-size: 10rem;
         padding: 0;
@@ -146,10 +147,29 @@ $color-main:#0075ff;
 
     }
     .tittle{
-        margin-top: -2rem;
+        margin-top: -1rem;
         font-size: 1.5rem;
+        font-weight: 600;
 
 
     }
 
+}
+
+.sec-footer-cta {
+    background-color:$color-footer;
+    padding: 5rem;
+    background-image: url("../assets/bg.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    .footer-cta{
+        max-width: 50%;
+    }
+    .cta-tittle{
+        font-size: 2rem;
+    }
+    .cta-description{
+        font-size: 1.1rem;
+        
+    }
 }

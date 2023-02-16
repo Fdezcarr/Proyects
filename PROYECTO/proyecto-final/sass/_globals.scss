@@ -1,6 +1,7 @@
 // IMPORTAMOS VARIABLES DE OTRAS RUTAS
 @use "components";
-@mixin section-display{
+
+@mixin section-display {
     width: 100%;
     max-width: 992px;
     margin: auto;
@@ -12,22 +13,21 @@
 //EL MENU ETC
 
 
-body{
+body {}
 
-
-}
 //CLASES PARA CREAR MENU PRINCIPAL
-.nav{
+.nav {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
     width: 100%;
     height: 4rem;
     border-bottom: solid 1px #ddd;
-    
-    
+
+
 }
-.logo img{
+
+.logo img {
     max-width: 7rem;
 }
 
@@ -38,60 +38,70 @@ body{
     align-items: center;
 
     .home-cta {
-        flex: 1; 
-        
-        
+        flex: 1;
+
+
         .cta-text {
             // DE ESTA FORMA ACCEDEMOS A LA VARIABLE DE 
             // COLOR DE OTRA HOJA CON @USE
             color: components.$color-main;
         }
-        .home-title{
+
+        .home-title {
             width: 20rem;
             font-size: 3rem;
 
         }
     }
-    
+
 
 }
+
 // SECCION SIGUIENTE AL HOME CON UN MIXiN IMPORTAMOS LOS ESTILOS COMUNES 
-.sec-features{
+.sec-features {
     @include section-display();
     display: flex;
     flex-direction: column;
     align-items: center;
-        .intro{
+
+    .intro {
         text-align: center;
-        h3{
+
+        h3 {
             font-size: 1.8rem;
         }
-        p{
+
+        p {
             font-size: 0.8rem;
             color: #888;
         }
     }
+
     .features {
         display: flex;
         gap: 1rem;
         align-items: center;
+
         .text {
             padding: 2rem 0;
             flex: 1;
-            
-            .feature{
+
+            .feature {
                 display: flex;
                 flex-direction: row;
                 //CON ESTA PROPIEDAD PONEMOS EL ICONO A LA ALTURA DEL TITULO baseline
                 align-items: center;
+
                 .description {
                     margin-left: 1rem;
                     max-width: 20rem;
+
                     //CON ESTAS PROPIEDADES LO ALEJAMOS DEL ICONO Y CAMBIAMOS EL TAMAÑO DE LETRA
-                    .description-title {    
-                    font-size: 1.15rem;
+                    .description-title {
+                        font-size: 1.15rem;
 
                     }
+
                     .description-text {
                         font-size: 1rem;
 
@@ -100,18 +110,65 @@ body{
                 }
             }
         }
+
         .img {
-            img{
+            img {
                 max-width: 18rem;
             }
         }
     }
 }
+
 // EXTENDEMOS LA SECCION DE FEATURES YA QUE ES MUY PARECIDA 
 .sec-benefits {
-.intro {
-    border-top: 1px solid #ddd;
-    @extend .sec-features, .intro;
+    .intro {
+        border-top: 1px solid #ddd;
+        @extend .sec-features, .intro;
     }
 }
 
+.benefit-cards {
+    width: 100%;
+    padding: 0 2rem 2rem 2rem;
+}
+
+// seccion horizontal con backgraund y texto ilustrativo banner 
+.sec-kpis {
+    background-color: components.$color-main;
+    color: white;
+    padding: 4rem;
+
+    .kpi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .number {
+            font-size: 3.5rem;
+            font-weight: 600;
+
+        }
+
+        .desc {
+            font-size: 0.9rem;
+            color: #ffffffaa;
+        }
+    }
+}
+
+.sec-onboarding {
+    .intro{
+        @extend .sec-features, .intro;
+    }
+    .steps{
+        padding: 0 7rem 5rem 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .step-separator {
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 1rem;
+        }
+    }
+}
