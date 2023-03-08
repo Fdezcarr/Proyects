@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="buscador.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">LOGO</a>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://images4.alphacoders.com/936/thumb-1920-936378.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://i.pinimg.com/originals/30/ab/6c/30ab6c1a569786ed5883cdbec4ad79e5.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://www.xtrafondos.com/descargar.php?id=4467&resolucion=1920x1080" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- SECCION HOME  -->
+    
+    <section class="home">
+        <div class="home__text">
+            <h1 class="home__title">Bienvenida a nuestra página de uñas</h1>
+            <p class="home__description">Ofrecemos los mejores servicios de manicura y pedicura en la ciudad. Ven a
+                visitarnos y deja que te mimemos con nuestros tratamientos personalizados y profesionales.</p>
+            <a href="#" class="home__btn">Agenda una cita</a>
+        </div>
+        <div class="group-img">
+                <img src="https://www.xtrafondos.com/descargar.php?id=4467&resolucion=1920x1080" alt="Manicure"
+                    class="home__img-item">
+                    <img src="https://www.xtrafondos.com/descargar.php?id=4467&resolucion=1920x1080" alt="Pedicure"
+                    class="home__img-item">
+                </div>
+                <div class="group-btn">                    
+                    <a href="#" class="home__btn">Agenda una cita</a>
+                    <a href="#" class="home__btn">Agenda una cita</a>
+                </div>
+    </section>
+
+
+
+    <script src="buscador.js"></script>
+</body>
+
+</html>

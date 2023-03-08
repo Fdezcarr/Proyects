@@ -155,6 +155,12 @@
   width: 20rem;
   font-size: 3rem;
 }
+.sec-home .home-cta .home-description {
+  width: 300px;
+}
+.sec-home .home-cta .lead-magnet .input-col {
+  max-width: 200px;
+}
 
 .sec-features, .sec-onboarding .intro, .sec-benefits .intro {
   width: 100%;
